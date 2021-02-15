@@ -7,29 +7,26 @@
     </head>
     <body class="background">
         <div class="js-clock">
-            <h1 class="js-title">00:00</h1>
+            <!--h1 class="js-title">00:00</h1-->
+            <h1 class="sixtitle">Tasks</h1>
         </div>
 
-        <form class="js-form form">
-            <input type="text" placeholder="What is your name?" />
-        </form>
-
-        <h4 class="js-greetings greetings"></h4>
 
         <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do" />
+            <input type="text" placeholder="Add Tasks" />
         </form>
 
         <ul class="js-toDoList">
+            <span class="todoTitle">Pending</span>
+        </ul>
+
+        <ul class="js-finishList">
+            <span class="finishTitle">Finished</span>
         </ul>
 
         <span class="js-weather"></span>
 
         <!-- script src="index.js"></script -->
-        <script src="clock.js"></script>
-        <script src="greeting.js"></script>
         <script src="todo.js"></script>
-        <script src="background.js"></script>
-        <script src="weather.js"></script>
     </body>
 </html>
