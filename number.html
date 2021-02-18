@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Number Game</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="number.css" />
+    </head>
+    <body>
+        <div class="title">
+            <h1 class="game_title">Randow Number Game</h1>
+        </div>
+
+        <div class="subtitle">
+            <h3 class="howtoplay">Generate a number between 0 and</h3>
+            <h3 class="howtoplay_random_num">-</h3>
+        </div>
+
+        <div>
+            <input type="range" required id="number_range" min="0" max="200" step="5" 
+            list="tickmarks" />
+            <datalist id="tickmarks">
+                <option value="50"></option>
+                <option value="100"></option>
+                <option value="150"></option>
+                <option value="200"></option>
+                <option value="250"></option>
+            </datalist>
+        </div>
+
+        <form class="game_form">
+            <label for="game_start">Guess the number! : </label>
+            <input type="number" class="game_start" />
+            <input class="game_btn" type="button" value="Play!" />
+        </form>
+
+        <span class="result_view"></span>
+        <span class="result_feedback"></span>
+
+    
+
+
+        <script src="number.js"></script>
+    </body>
+</html>
