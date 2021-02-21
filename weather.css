@@ -1,0 +1,8 @@
+.js-weather {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 22px;
+    left: 25px;
+}

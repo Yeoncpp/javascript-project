@@ -9,8 +9,9 @@ function getWeather(lat,long){
         return response.json();
     }).then(function(json){
         const temperature = json.main.temp;
+        const sky = json.weather[0].main;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${sky} now ${temperature} ℃ at ${place}`;
     })
     //then은 데이터가 완전히 들어온 다음 함수를 호출한다
 }

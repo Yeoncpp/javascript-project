@@ -1,0 +1,31 @@
+.js-mention__box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@keyframes gradeintFont {
+    0%{
+        background: repeating-linear-gradient(to right,  wheat, rgb(255, 167, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: repeating-linear-gradient(to right, rgb(255, 167, 255), wheat);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: repeating-linear-gradient(to right,  wheat, rgb(255, 167, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.js-mention {
+    position: absolute;
+    top: 200px;
+    font-size: 28px;
+    font-weight: 800;
+    animation: gradeintFont 0.7s ease-in-out infinite;
+}

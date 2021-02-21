@@ -45,6 +45,16 @@ function paintTodo(text){
     delBtn.addEventListener("click", deleteTodo);
 
     span.innerText = text;
+    span.style.color = "white";
+    span.style.fontSize = "25px";
+    span.style.fontWeight = "bold";
+    li.style.marginLeft = "380px";
+
+    delBtn.style.marginLeft = "5px";
+    delBtn.style.border = "none"; 
+    delBtn.style.background = "none";
+    delBtn.style.fontSize = "25px";
+    li.style.zIndex = "10";
 
     // 해당하는 span, delbtn 등을 li에 넣는다 :)
     li.appendChild(span);
